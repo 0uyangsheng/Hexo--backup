@@ -40,7 +40,7 @@ $ hexo s # 或者hexo server，可以在http://localhost:4000/ 查看
     - `hexo new page "pageName"` #新建页面
     - `hexo clean`  清除静态资源
 
-### Next主题
+### [Next主题](http://theme-next.iissnan.com/)
 - clone [NexT主题](https://github.com/iissnan/hexo-theme-next)
 
  > git clone https://github.com/iissnan/hexo-theme-next
@@ -85,6 +85,26 @@ $ hexo s # 或者hexo server，可以在http://localhost:4000/ 查看
 - 如何插入代码（[Link](https://hexo.io/docs/tag-plugins.html)）
     - 采用 codeblock
     - 3个`
+
+{% note default %} 
+
+\`\`\`[language] [title] [url] [link-text]
+
+`代码`
+
+\`\`\`
+
+{% endnote %}
+
+[language] 是代码语言的名称，用来设置代码块颜色高亮，非必须；
+
+[title] 是顶部左边的说明，非必须；
+
+[url] 是顶部右边的超链接地址，非必须；
+
+[link text] 如它的字面意思，超链接的名称，非必须。
+
+亲测这 4 项应该是根据空格来分隔，而不是[]，故请不要加[]。除非如果你想写后面两个，但不想写前面两个，那么就必须加[]了，要这样写：`[] [] [url] [link text]`。
 
 - 如何添加categories&tags（[Link](https://hexo.io/docs/front-matter.html)）
 
